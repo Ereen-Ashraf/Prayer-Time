@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI';
+}
+
+body{
+    direction: rtl;
+    background-color:rgb(1, 1, 134);
+}
+
+.container .header{
+    color: white;
+}
+
+.container #City_Name{
+    margin: 10px 20px;
+    font-size: 120px;
+    font-weight: 400;
+}
+
+.container #Date{
+    margin: 5px 30px;
+    font-size: 30px;
+    font-weight:200;
+}
+
+.container hr{
+    margin: 0 25px;
+    border: rgba(255, 255, 255, 0.247), solid, 1px;
+}
+
+
+.cards{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.cards div{
+    width: 12.5%;
+    margin: 50px 25px;
+    box-shadow: 0 3px 10px rgba(1 1 1 / 15%);
+    transition: .7s ease;
+}
+
+.cards div:hover{
+    transform: scale(1.1);
+}
+
+
+.cards div .title{
+    font-size: 35px;
+    padding-bottom: 8px;
+    font-weight: 400;
+    background-color: rgb(26, 25, 25);
+}
+
+.cards div .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(26, 25, 25);
+    min-height: 20vh;
+    font-size: 40px;
+    background-color: white;
+}
+
+.Select{
+    text-align: center;
+    height: 50vh;
+}
+
+.Select select{
+    width: 12em;
+    margin-top: 50px;
+    padding: 0 10px 4px 0;
+    font-size: 17px;
+    color: white;
+    border-radius: 15px;
+    border: rgba(255, 255, 255, 0.247) 1px solid;
+    outline: none;
+    background-color: transparent;
+}
+
+.Select option{
+    color: black;
+}
+
+
+
+
+@media (min-width:769px) and (max-width:1024px) {
+    .container #City_Name{
+        font-size: 100px;
+    }
+    
+    .container #Date{
+        font-size: 25px;
+    }
+
+    .cards div{
+        width: 19%;
+    }
+    
+    .cards div .title{
+        font-size: 35px;
+    }
+
+    .cards div .time{
+        min-height: 17vh;
+        font-size: 35px;
+    }
+    
+    .Select select{
+        width: 9em;
+    }
+
+    }
+
+
+
+@media (min-width:481px) and (max-width:768px) {
+    .container #City_Name{
+        font-size: 75px;
+    }
+    
+    .container #Date{
+        font-size: 20px;
+    }
+
+    .cards div{
+        width: 22%;
+    }
+    
+    .cards div .title{
+        font-size: 27px;
+    }
+
+    .cards div .time{
+        min-height: 17vh;
+        font-size: 35px;
+    }
+    
+    .Select select{
+        width: 8em;
+    }
+
+}
+
+
+@media (max-width:481px){
+    .container #City_Name{
+        font-size: 60px;
+    }
+    
+    .container #Date{
+        font-size: 16px;
+    }
+
+    .cards div{
+        width: 35%;
+    }
+    
+    .cards div .title{
+        font-size: 27px;
+    }
+
+    .cards div .time{
+        min-height: 17vh;
+        font-size: 35px;
+    }
+    
+    .Select select{
+        width: 8em;
+    }
+
+}
